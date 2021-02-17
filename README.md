@@ -2,6 +2,9 @@
 
 This tool aims to provide functional programming basics like map, reduce, fold, zip etc for shells
 
+Example: `du * | cut -f 1 | reduce (lambda x y : 'math $y + $x')` here we sum over all file sizes using a lambda and the reduce function.
+
+
 ## install
 ### fish:
 include `set -ax fish_function_path /path/to/this/repo/src/fish` somewhere in your fish init
